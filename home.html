@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="groupProject.css">
+<title>A Smithie's Guide to Downtown Cáfes</title>
+<meta name="Author"  content="Emily Kim & Lizette Carpenter">
+</head>
+<div class="backgroundHeader" > 
+        <div class="logo">
+                <a href="home.html">
+                    <img src="smallwebsiteLogo1.jpg" alt="Busy Smithie Logo" width="150" height="120px">
+                </a>  
+            </div>
+
+<div class="navbar" >
+    <li><a href="home.html">HOME</a></li>
+    <div class="cafedropdown">
+        <button class="cafebtn" onclick="cafeDrop()"> CAFE
+            <i class ="fa fa-caret-down"></i>
+        </button>
+        <div class="cafedropdown-content" id="myDropdown"> 
+            <a href="woodstar.html">Woodstar</a>
+            <a href="dobratea.html">Dobra Tea</a>
+            <a href="patisserielenox.html">Patisserie Lenox</a>
+            <a href="nourish.html">Nourish</a>
+            <a href="haymarket.html">Haymarket</a>
+            <a href="theroost.html">The Roost</a>
+            <a href="tartbakingcompany.html">Tart Baking Company</a>
+            <a href="northamptoncoffee.html">Northampton Coffee</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <li><a href="map.html">MAP</a></li>
+</div>
+</div>
+<body> 
+<!--Home Banner-->
+<!--Photo Grid-->
+<div class="photogrid">
+        <div class="home-banner" >
+            <div> Study Like a Smithie in Downtown Northampton 
+                <p class="intro">Don’t know where to study because of the Neilson renovations? <br> 
+                We’ve compiled a guide to Noho’s Cafes!
+                </p>
+            </div>
+        </div>
+        <div class="row" >
+                <div class="home-column">
+                    <a target="_blank" href="homepageDobra.JPG">
+                        <img id="table" src="homepageDobra.JPG" alt="Entrance of Dobra Tea" style="width:100%">
+                    </a>
+                    <a target="_blank" href="nourish.JPG">
+                        <img id="bar" src="nourish.JPG" alt="Cafe Bar from Nourish" style="width:100%">
+                    </a>
+                </div>
+                <div class="home-column">
+                    <a target="_blank" href="shelbourne.JPG">
+                        <img id="plants" src="shelbourne.JPG" alt="Latte from Shelbourne" style="width:100%">
+                    </a>
+                    <a target="_blank" href="homepageRoost.JPG">
+                        <img id="table" src="homepageRoost.JPG" alt="Window in Roost" style="width:100%">
+                    </a>
+                 </div>
+                 <div class ="home-column">
+                     <a target="_blank" href="homepageTart.JPG">
+                         <img id="table" src="homepageTart.JPG" alt="Items in Tart Baking Company" style="width:100%">
+                     </a>
+                     <a target="_blank" href="lenox.JPG">
+                            <img id="lenox" src="lenox.JPG" alt="Tart from Patisserie Lenox" style="width:100%">
+                    </a>
+                 </div>
+                 <div class ="home-column">
+                    <a target="_blank" href="homepageWoodstar.JPG">
+                        <img id="table" src="homepageWoodstar.JPG" alt="Signs in Woodstar" style="width:100%">
+                    </a>
+                    <a target="_blank" href="homepageNourish.JPG">
+                        <img id="table" src="homepageNourish.JPG" alt="Nourish Entrance" style="width:100%">
+                    </a>
+                 </div>
+        </div>    
+</div>
+<!--Footer-->
+<div class="footer-row" >
+        <div class="footer-column">
+            <p id="authors">
+                Emily Kim <br>
+                Smith College '20' <br> 
+                Computer Science Major <br>
+                <a href="https://www.instagram.com/emyoki__/"><img src="instaicon.png" alt="Instagram Icon" title="Emily's Instagram" width="25" height="25"></a>
+                <br> <br> 
+                Lizette Carpenter <br>
+                Smith College '20<br> 
+                Computer Science Major<br> 
+                <a href="https://www.instagram.com/lizettecarpenter"><img src="instaicon.png" alt="Instagram Icon" title="Lizett's Instagram" width="25" height="25"></a>
+                <br>
+            </p> 
+        </div>
+        <div class="footer-column">
+            <p id="cafelinks">
+                <a style="text-decoration:none; color:white" href="woodstar.html">Woodstar</a> 
+                . 
+                <a style="text-decoration:none; color:white" href="dobratea.html">Dobra Tea</a> <br>
+                <a style="text-decoration:none; color:white" href="patisserielenox.html">Patisserie Lenox</a>
+                .
+                <a style="text-decoration:none; color:white" href="theroost.html">The Roost</a><br> 
+                <a style="text-decoration:none; color:white" href="nourish.html">Nourish</a> 
+                .
+                <a style="text-decoration:none; color:white" href="haymarket.html">Haymarket</a> <br>
+    
+                <a style="text-decoration:none; color:white" href="tartbakingcompany.html">Tart Baking Company</a>
+                .
+                <a style="text-decoration:none; color:white" href="northamptoncoffee.html">Northampton Coffee</a>
+            </p>
+        </div>
+        <div class="footer-column"> 
+            <img id="profile" src="profile.jpg" alt="Picture of Lizette and Emily" width="200" height="200">  
+        </div>
+    <div class="footer-busysmithie" >busy smithie</div>
+    </div>
+
+<script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function cafeDrop() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.cafebtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+</script>
+</body>
+</html> 

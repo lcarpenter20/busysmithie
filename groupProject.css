@@ -1,0 +1,363 @@
+.logo {
+    position: absolute;
+    margin-left: 2in;
+    top: 35px;
+    z-index: 4;
+    display: flex;
+}
+.header {
+    position: relative;
+    top: 1.50in;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(156, 221, 253);
+    position: relative;
+    top: .7in;
+    z-index: 3;
+    font-family: "PT Sans";
+    letter-spacing: 3px;
+    font-size: 30px;
+    width: auto;
+}
+li {
+    margin-inline-start: 5.5in;
+    list-style-type: none;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.cafedropdown {
+    float: left;
+    overflow: hidden;
+}
+.cafedropdown .cafebtn {
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /*margin-left: 0.5in;*/ 
+    left: 1.65in;
+    top: .7in;
+}
+.navbar a:hover, .cafedropdown:hover .cafebtn, .cafebtn:focus {
+    background-color: rgb( 102, 102, 102);
+    opacity:0.9;
+}
+.cafedropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 8;
+}
+
+.cafedropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.cafedropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+/*.background{
+    background-size: cover; 
+
+    /* Set rules to fill background 
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 1000px;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    top: 25%;
+  }*/
+.home-banner { 
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
+    background-color: #90ceed; 
+    background-size: cover;
+    opacity: 0.9;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 5px 100px 5px 100px;
+    text-align: center;
+    color: white;
+    font-family: "American Typewriter";
+    font-size: 30px; 
+    min-width: 100%;
+    margin-top: 20%;
+    padding: 20px;
+}
+
+p.intro { 
+    width: auto;
+    font-family: "Tw Cen MT";
+    font-size: 25px; 
+}
+a.cafetitle {
+    font-family: "American Typewriter";
+    font-size: 25px;
+}
+
+.reportcard {
+    display: block;
+    font-family: "PT Sans";
+    color: white;
+    position: relative;
+    line-height: 0.25in;
+    float: left;
+    width: 25%;
+    height: 100%;
+    top: 1.25in;
+    background-color: #90ceed;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+p.maptitle {
+    font-size:25px;
+    line-height: 0.35in;
+    font-family: "American Typewriter";
+    text-align: center;
+}
+/*.collapsible {
+    background-color: #90ceed;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: "Tw Cen MT";
+}*/
+.active, .collapsible:hover {
+    background-color: lightgray;
+}
+.collapsible-map {
+    background-color: #90ceed;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    font-family: "Tw Cen MT";
+}
+#woodstar-map-info {
+    background-color: #BCB6FF;
+}
+.active, #woodstar-map-info:hover {
+    background-color: lightgray;
+}
+#dobratea-map-info {
+    background-color: #B8E1FF;
+}
+.active, #dobratea-map-info:hover {
+    background-color: lightgray;
+}
+#patisserie-map-info {
+    background-color: #A9FFF7;
+}
+.active, #patisserie-map-info:hover {
+    background-color: lightgray;
+}
+#nourish-map-info {
+    background-color: #94FBAB;
+}
+.active, #nourish-map-info:hover {
+    background-color: lightgray;
+}
+#haymarket-map-info {
+    background-color: #82ABA1;
+}
+.active, #haymarket-map-info:hover {
+    background-color: lightgray;
+}
+#roost-map-info {
+    background-color: #8C5E58;
+}
+.active, #roost-map-info:hover {
+    background-color: lightgray;
+}
+#tart-map-info {
+    background-color: #63D471;
+}
+.active, #tart-map-info:hover {
+    background-color: lightgray;
+}
+#nohocoffee-map-info {
+    background-color:#FF7E6B;
+}
+.active, #nohocoffee-map-info:hover {
+    background-color: lightgray;
+}
+
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #90ceed;
+    font-family: "Tw Cen MT";
+    margin-inline-start: 40px;
+}
+
+.rating {
+    font-family: "Tw Cen MT";
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+.rating-column {
+    -ms-flex: 40%; /* IE10 */
+    flex: 4%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+#left-rating {
+    text-align: right;
+}
+#right-rating {
+    text-align: left; 
+}
+
+.photogrid {
+    position: relative;
+    top: 0.98in;
+    background-color: white;
+    padding: 20px;
+    z-index: -1;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create 3 equal columns that sits next to each other */
+.home-column {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 0.15in;
+
+}
+.column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 33%;
+    padding: 0 8px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 0.15in;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.footer-row {
+    position: relative; 
+    top: 2in; 
+    background-color: rgb(156, 221, 253);
+    color: white; 
+    padding-bottom: 100px;
+    line-height: 0.25in;
+    font-size: 0.15in; 
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.footer-column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 33%;
+    padding: 0 8px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-size: 0.15in;
+    align: middle;
+}
+
+#cafelinks {
+    font-family: "PT Sans"; 
+    font-size: 18px;
+    position: relative;
+    text-align: center; 
+    color: white ;
+    align-content: 50%;
+    line-height: .3in;
+    margin-top: 60px;
+}
+p.authors {
+    font-family: "Tw Cen MT";
+    position: relative;
+    text-align: center;
+    font-family: "Tw Cen MT";
+}
+
+#authors {
+    font-family: "Tw Cen MT";
+    position: relative;
+    text-align: center;
+    font-family: "Tw Cen MT";
+}
+
+#profile {
+    position: relative;
+    margin-top: 30px;
+    display: block;
+    left: 25%;
+}
+#cafelinks a:hover {
+    background-color: rgb( 102, 102, 102);
+}
+#footer-busysmithie a:hover {
+    background-color: rgb(156, 221, 253);
+}
+.footer-busysmithie {
+    position: relative;
+    bottom: 5px;
+    font-family: "American Typewriter";
+    font-size: 0.15in;
+    background-color:  rgb( 102, 102, 102); 
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
